@@ -9,11 +9,13 @@
     <input type="radio" id="tab-2" name="tab-label" class="tab-input" />
     <input type="radio" id="tab-3" name="tab-label" class="tab-input" />
     <input type="radio" id="tab-4" name="tab-label" class="tab-input" />
+    <input type="radio" id="tab-5" name="tab-label" class="tab-input" />
     <div class="tabs">
       <label class="tab-label" for="tab-1" id="tab-text">Text</label>
       <label class="tab-label" for="tab-2" id="tab-image">Image</label>
       <label class="tab-label" for="tab-3" id="tab-video">Video</label>
       <label class="tab-label" for="tab-4" id="tab-table">Table</label>
+      <label class="tab-label" for="tab-5" id="tab-email">Email</label>
     </div>
     <div class="content text">
       <div class="form name-form">
@@ -184,6 +186,17 @@
           <td>2018</td>
         </tr>
       </table>
+    </div>
+    <div class="content email">
+      <form id="email-form">
+        <label>Email: </label>
+        <input type="text" id="email-input" />
+        <input type="button" onclick="emailSubmit()" value="Submit" />
+      </form>
+      <p id="email-success" style="display: none">
+        Email succesfully recorded.
+      </p>
+      <p id="email-failure" style="display: none">Invalid email address.</p>
     </div>
   </body>
 
