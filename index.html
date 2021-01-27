@@ -41,48 +41,64 @@
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/1/1e/San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg"
             alt="San Francisco"
+            id="image-1"
+            onclick="popupOn(this.src)"
           />
         </div>
         <div class="col-3">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Montaje_de_la_Ciudad_de_Buenos_Aires.png"
             alt="Buenos Aires"
+            id="image-2"
+            onclick="popupOn(this.src)"
           />
         </div>
         <div class="col-3">
           <img
             src="https://photos.mandarinoriental.com/is/image/MandarinOriental/paris-2017-home?wid=2880&hei=1280&fmt=jpeg&crop=9,336,2699,1200&anchor=1358,936&qlt=75,0&fit=wrap&op_sharpen=0&resMode=sharp2&op_usm=0,0,0,0&iccEmbed=0&printRes=72"
             alt="Paris"
+            id="image-3"
+            onclick="popupOn(this.src)"
           />
         </div>
         <div class="col-3">
           <img
             src="https://cdn.britannica.com/46/189746-050-C790AE3F/Skyline-Cairo.jpg"
             alt="Cairo"
+            id="image-4"
+            onclick="popupOn(this.src)"
           />
         </div>
         <div class="col-3">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Hong_Kong_Harbour_Night_2019-06-11.jpg/2880px-Hong_Kong_Harbour_Night_2019-06-11.jpg"
             alt="Hong Kong"
+            id="iamge-5"
+            onclick="popupOn(this.src)"
           />
         </div>
         <div class="col-3">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/2880px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg"
             alt="Sydney"
+            id="image-6"
+            onclick="popupOn(this.src)"
           />
         </div>
         <div class="col-3">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/7/79/Rio_Collage.png"
             alt="Rio de Janeiro"
+            id="image-7"
+            onclick="popupOn(this.src)"
           />
         </div>
         <div class="col-3">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg"
             alt="Tokyo"
+            id="image-8"
+            onclick="popupOn(this.src)"
           />
         </div>
       </div>
@@ -90,68 +106,75 @@
     <div class="content video">
       <div class="row">
         <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/S77A_7w7LYk"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div
+            class="video-overlay"
+            id="video-overlay-1"
+            onclick="popupVideo(this.id)"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/S77A_7w7LYk"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              id="video-1"
+            ></iframe>
+          </div>
         </div>
         <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/KMc3vL_MIeo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div
+            class="video-overlay"
+            id="video-overlay-2"
+            onclick="popupVideo(this.id)"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/KMc3vL_MIeo"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/8qRZcXIODNU"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div
+            class="video-overlay"
+            id="video-overlay-3"
+            onclick="popupVideo(this.id)"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/8qRZcXIODNU"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/-QlxCQThAI8"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div
+            class="video-overlay"
+            id="video-overlay-4"
+            onclick="popupVideo(this.id)"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/-QlxCQThAI8"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/QriUh3kIETY"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/Yu2bh2Gulhw"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/H1KP4ztKK0A"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="col-3">
-          <iframe
-            src="https://www.youtube.com/embed/qaq0nNXy0ak"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div
+            class="video-overlay"
+            id="video-overlay-5"
+            onclick="popupVideo(this.id)"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/H1KP4ztKK0A"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -197,6 +220,17 @@
         Email succesfully recorded.
       </p>
       <p id="email-failure" style="display: none">Invalid email address.</p>
+    </div>
+    <div class="overlay" id="popup-overlay" onclick="popupOff()">
+      <img id="popup-img" />
+    </div>
+    <div class="overlay" id="popup-overlay-video" onclick="popupOff()">
+      <iframe
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="popup-video"
+      ></iframe>
     </div>
   </body>
 
