@@ -1,3 +1,7 @@
+window.onscroll = function () {
+  checkPosition();
+};
+
 // function from https://www.w3resource.com/javascript/form/email-validation.php
 function ValidateEmail(mail) {
   if (
@@ -61,4 +65,22 @@ function popupVideo(id) {
       break;
   }
   document.getElementById("popup-video").src = src;
+}
+
+function checkPosition() {
+  var goToTopButton = document.getElementById("go-to-top-button");
+  var quarter = document.body.scrollHeight / 4;
+  if (
+    document.body.scrollTop > quarter ||
+    document.documentElement.scrollTop > quarter
+  ) {
+    goToTopButton.style.display = "block";
+  } else {
+    goToTopButton.style.display = "none";
+  }
+}
+
+function goToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
